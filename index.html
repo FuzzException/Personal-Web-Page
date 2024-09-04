@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equi="X-UA-Compatible"
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Personal Web Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/Users/sarahgteerthan/Desktop/Projects/Coursera WebDev/Personal Web page/public/css/styles.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <div class="left" id="home" style="display: flex; align-items: center;">
+                    <div class="image-container" id="image" style="margin-right: 10px;">
+                        <a href="https://www.linkedin.com/in/sarah-g-teerthan-369bb5246/" target="_blank">
+                            <img src="/Users/sarahgteerthan/Desktop/Projects/Coursera WebDev/photo.jpeg" alt="Sarah G Teerthan" height="100" width="100" style="border-radius: 20px;" class="hover-image" id="profile-photo">
+                        </a>
+                    </div>
+                    <div class="text-container">
+                        <h3>Sarah G Teerthan</h3><br>
+                        <h6>✉️ teerthansarah@gmail.com</h6><br> 
+                        <h6>📞 9633718208</h6>
+                    </div>
+                    <button onclick="showPopup()" style="width:fit-content; border-radius: 40px; border: 2px solid red;
+                    animation: moveBorder 1s both infinite;">DO NOT Click!</button>
+                    <style>
+                      @keyframes moveBorder {
+                        0% {
+                            border-color: red transparent transparent transparent;
+                        }
+                        25% {
+                            border-color: red red transparent transparent;
+                        }
+                        50% {
+                            border-color: red red red transparent;
+                        }
+                        75% {
+                            border-color: red red red red;
+                        }
+                        100% {
+                            border-color: transparent transparent transparent transparent;
+                        }
+                    }
+                    </style>
+                    <script>
+                      // Your previous showPopup() function and other code...
+                      
+                      // Get the image element
+                      const profilePhoto = document.getElementById('profile-photo');
+                      const nav = document.getElementById('navbar');
+                  
+                      // Function to change the background color when hovering over the image
+                      profilePhoto.addEventListener('mouseover', function() {
+                          document.body.style.backgroundColor = '#007BFF'; // Set to your desired color
+                      });
+                  
+                      // Function to revert back to the original background color when hover ends
+                      profilePhoto.addEventListener('mouseout', function() {
+                          document.body.style.backgroundColor = ''; // Reset to the original color
+                      });
+                  </script>
+                  
+                </div>
+                <div class="right">
+                    <ul>
+                        <li></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#secondSection">Bucket List</a></li>
+                        <li><a href="#projects">Media Embeddings</a></li>
+                    </ul>
+                </div>
+                <script>
+                  function showPopup() {
+                      alert("Hello! Welcome to my page!");
+                  }
+              </script>
+            </nav>
+
+        </header>
+        <main>
+            <section id="about" class="firstSection">
+                <div class="leftSection">
+                    <img src="https://camo.githubusercontent.com/e9f3346b3ffd50eb559a31eda475cf321e2ede3284f37ba8e92e57b6fbd7a1b4/68747470733a2f2f6d656469612e74656e6f722e636f6d2f53353962506b543070716341414141432f70726f6772616d6d696e672e676966" alt="Sarah G Teerthan" height="300" width="500" style="border-radius: 20px;">
+                    <br><br><hr><br>
+                    <h4 style="color:black; font-size: 20px;"><b><u>STRENGTHS</u></b></h4>
+                    <ol>
+                      <li style="color: rgb(255, 45, 45);"><b>Technical Expertise : </b></li>
+                      <p>Strong proficiency in Machine Learning, Artificial Intelligence, Deep Learning, and Data Science, along with extensive experience in Python, Java, C Programming, Web Development, and Database Management.
+                      </p>
+                      <li style="color: rgb(255, 45, 45);"><b>Problem-Solving Ability :</b></li>
+                      <p>Excellent at tackling complex challenges and developing innovative solutions, particularly in AI and data-driven projects.</p>
+                      <li style="color: rgb(255, 45, 45);"><b>Adaptability :</b></li>
+                      <p>Quick to learn new technologies and adapt to evolving industry trends, ensuring up-to-date skills in a fast-paced environment.</p>
+                      <li style="color: rgb(255, 45, 45);"><b>Attention to Detail :</b></li>
+                      <p>Meticulous approach to coding and development, ensuring robust, efficient, and error-free applications.</p>
+                      <li style="color: rgb(255, 45, 45);"><b>Team Collaboration :</b></li>
+                      <p>Effective team player with strong communication skills, contributing positively to group projects and taking initiative when needed.</p>
+                    </ol>
+                </div>
+                <div class="rightSection">
+                    <h1 class="hello" style="font-size: 33px;">Hello, I'm <span class="diff">Sarah G Teerthan</span> 👋🏻</h1>
+                    <br>
+                    <p class="ani" style="font-size: 31px;">
+                        I am a <span id="element"></span>
+                    </p>
+                    <br> 
+                    <p class="desc" style="font-size: 18px;">
+                        A motivated engineering student with expertise in Machine Learning, AI, Deep Learning, and Data Science, I am passionate about developing innovative solutions to real-world challenges. Proficient in Python, Java, Web Development, and Database Management, I strive to create impactful and efficient systems while continuously expanding my technical skills.
+                    </p>
+                    <span id="element"></span>
+                    <br><hr>
+                    <br>
+                    <h4 style="color:black; font-size: 20px;"><strong><u>WEAKNESSES</u></strong></h4>
+                    <li style="color: rgb(255, 45, 45);"><b>Overcommitment : </b></li>
+                    <p>Sometimes taking on too many responsibilities at once, leading to occasional challenges in balancing workload and deadlines.</p>
+                    <li style="color: rgb(255, 45, 45);"><b>Perfectionism :</b></li>
+                    <p>Tendency to focus on perfecting every detail, which can sometimes slow down project timelines or cause stress.</p>
+                    <li style="color: rgb(255, 45, 45);"><b>Delegation :</b></li>
+                    <p>Occasionally hesitant to delegate tasks, preferring to handle everything independently, which may limit efficiency in larger projects.</p>        
+                  </div>
+            </section>
+        </main>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['Web Developer', 'AI engineer','Data Scientist'],
+              typeSpeed: 50,
+            });
+          </script>
+
+            <section id="secondSection" class="skills">
+                <h2>
+                  BUCKET LIST
+                </h2>
+                <br><br>
+                <div class="table">
+                  <table border="1">
+                    <thead>
+                      <th style="align-items: center; font-size:19px;">  Sl.No  </th>
+                      <th style="align-items: center; font-size:19px;">  Items  </th>
+                      <th style="align-items: center; font-size:19px;">  Status  </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1.</td>
+                        <td>Go bungee jumping</td>
+                        <td><form><input type="checkbox" style="align-items: center;"></form></td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td>See the Northern Lights </td>
+                        <td><form><input type="checkbox" style="align-items: center;"></form></td>
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td>Write a book</td>
+                        <td><form><input type="checkbox" style="align-items: center;"></form></td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td>Own a Porsche</td>
+                        <td><form><input type="checkbox" style="align-items: center;"></form></td>
+                      </tr>
+                      <tr>
+                        <td>5.</td>
+                        <td>Go on a solo trip</td>
+                        <td><form><input type="checkbox" style="align-items: center;"></form></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <h2>
+                  Media Embeddings
+                </h2>
+                <div style="clear:both;"></div>
+          
+                  <div id="projects-container" class="projects-container">
+                    <h2>Movie Clip :</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RnK9wokdySM" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+
+        <br><br>
+        <h2>Audio Clip :</h2>
+        <audio controls>
+          <source src="/Users/sarahgteerthan/Desktop/Projects/Coursera WebDev/BESABRIYAAN Full Video Song  M. S. DHONI - THE UNTOLD STORY  Sushant Singh Rajput.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      
+
+              </div>
+              </section>
+              <div style="clear:both;"></div>
+          
+              <div class="iconbutton">
+                <a href="#home">
+                  <h3>🔝</h3>
+                 <!--<img src="topup.png" width="50px"/>--> 
+                </a>
+              </div>
+                          
+            <script src="script.js"></script>
+            </body>
+          </html>

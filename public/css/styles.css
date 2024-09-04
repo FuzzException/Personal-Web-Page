@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+     text-decoration: none;
+     color: white;
+}
+nav ul li a:hover{
+    color: black;
+    font-size: 1.06rem;
+}
+
+
+.hello{
+    color: rgb(171, 107, 255);
+    font-size: 33px;
+    font: bold;
+}
+.ani{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(137, 58, 242);
+    font-size: 25px;
+}
+.desc{
+    color: rgb(137, 58, 242);
+    font-size: 15px;
+}
+.diff{
+    color: #4600a2;
+}
+#element{
+    color: black;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.left{
+    font-size: 1.5rem;
+}
+.image{
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.text-container h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.text-container h3, .text-container h6 {
+  line-height: 0.1;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: black;
+}
+.table{
+  color: black;
+  align-items: center;
+}
+.firstSection div{
+    width: 35%;
+}
+.leftSection{
+    width: 34px;
+}
+.skills{
+    display: flex;
+    margin: 23px 0;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: white;
+    box-sizing: border-box;
+}
+
+header {
+    /*background-color: #007BFF;*/
+    background-color: #8ccff8;
+    color: #0665ff;
+    text-align: center;
+    padding: 30px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: justify;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    color: royalblue;
+    margin: 30px;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+.recommendation {
+    border-left: 3px solid #007BFF;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.introduction {
+    color: black;
+    text-align: justify;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    animation-duration: 5s;
+    position: relative;
+  }
+/* Skills */
+  
+.all_skills {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  
+  .skill {
+    border: 1px solid gray;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    box-shadow: 0 3px 10px gray;
+  }
+  
+  .skill img {
+    height: 35px;
+    align-items: center;
+  }
+  
+  .skills h6 {
+    color: black;
+    align-items: center;
+    font-size: 20px;
+    margin-block-start: 8px;
+    margin-block-end: 5px;
+    font-weight: bold;
+  } 
+  
+  .skills p {
+    align-items: center;
+    font-size: 15px;
+    color: black;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  } 
+  
+  .flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Projects */
+  
+  .projects-container {
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+  
+  .projects-container hr {
+    border: 1px solid lightgray;
+    width: 75%;
+    margin-left: 5cm;
+  }
+  
+  .project-card {
+    margin: 0 15px 15px 30px;
+    padding-bottom: 5px;
+  }
+  
+  .project-card h3 {
+    color: #003e7f;
+    font-size: 25px;
+    margin-left: 30px;
+  }
+  
+  .project-card li {
+    color: #007BFF;
+    font-size: 15px;
+    margin-left: 30px;
+  }
+  
+  /* Recommendations */
+  
+  .all_recommendations {
+    display: flex;
+    align-items: center;
+    margin-left: 1in;
+    flex-direction: row;
+    flex-flow: wrap;
+    padding: 20px;
+  }
+  
+  .recommendation {
+    text-align: left;
+    width: 21.875rem;
+    padding: 1rem;
+    background-color: #1288ff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+    border:1px solid gray;
+    font-size: 16px;
+    height:150px
+  }
+  
+  .recommendation span {
+    color: black;
+    font-size: 15px;
+    /*font-family: 'Times New Roman', Times, serif;*/
+  }
+  
+  /* Scroll to Top Button */
+  
+  .iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  /* Form Pop-up */
+  
+  .popup {
+    width: 400px;
+    background-color: #e8bcf0;
+    border-radius: 3mm;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: fixed;
+    /* padding: 30px; */
+    display: none; /* Initially hide the popup */
+}
+
+.popup.visible {
+    display: block; /* Show the popup when it has the "visible" class */
+}
+
+.popup img {
+    padding-top: 20px;
+}
+
+.popup button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+}
+
+.popup button:hover {
+    background-color: #fff;
+    border: 2px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+  
+  /* Recommendation Form */
+  
+  input, textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin: 10px;  
+    width:100%;
+  }
+  
+  fieldset {
+    display: flexbox;
+    align-content: center;
+    justify-content: center;  
+    padding: 25px; 
+    margin-left: 50px; 
+    margin-right: 50px;   
+    border: thin solid white;
+    width: 50%;
+  }
+  
+  /* Buttons */
+  
+  button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #7600bc;
+    border: 1px solid #7600bc;
+    color: #fff;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+  }
